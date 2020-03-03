@@ -14,6 +14,7 @@ public abstract class Mapa {
     protected int alto;
     
     protected int [] tiles;
+    protected Tiles[]catalogoTiles;
     
     public Mapa(int ancho,int alto){
         this.ancho=ancho;
@@ -25,12 +26,13 @@ public abstract class Mapa {
     
     public Mapa(String ruta){
         cargarMapa(ruta);
+        generarMapa();
     }
     protected void generarMapa(){
         
     }
     
-    public void cargarMapa(String ruta){
+    protected void cargarMapa(String ruta){
         
     }
     
@@ -49,7 +51,14 @@ public abstract class Mapa {
         
         for (int y= n;y<s;y++){
             for (int x=o;x<e;x++){
-                getCuadro(x,y).mostrar(x, y, pantalla);
+            //    getCuadro(x,y).mostrar(x, y, pantalla);
+            if (x<0||y<0||x>=ancho||y>=alto){
+                Tiles.VOID.mostrar(x, y, pantalla); 
+            } else {
+                catalogoTiles[x+y*ancho].mostrar(x, y, pantalla);
+            
+            }
+            
             }
         }
     }
@@ -60,13 +69,48 @@ public abstract class Mapa {
             return Tiles.MONTANA;
         }
         switch (tiles[x+y*ancho]){
-            case 0:
+                case 0:
                 return Tiles.HIERBA;
-            case 1:
-                return Tiles.HIERBA;
-            case 2:
-                return Tiles.ARBOL;            
-        
+                case 1:
+                return Tiles.ARBOL;
+                case 2:
+                return Tiles.BARRO;
+                case 3:
+                return Tiles.BARRO_ESQUINA;  
+                case 4:
+                return Tiles.BARRO_LADO;      
+                case 5:
+                return Tiles.CAMINO_BARRO_ESQUINA_INTERIOR;  
+                case 6:
+                return Tiles.CAMINO_BARRO_ESQUINA_INTERIOR_I;  
+                case 7:
+                return Tiles.CAMINO_BARRO_I;  
+                case 8:
+                return Tiles.CAMINO_BARRO_J;  
+                case 9:
+                return Tiles.CAMINO_BARRO_T;  
+                case 10:
+                return Tiles.CAMINO_BARRO_T_I;  
+                case 11:
+                return Tiles.CASA1_1;  
+                case 12:
+                return Tiles.CASA1_2;  
+                case 13:
+                return Tiles.CASA1_3;  
+                case 14:
+                return Tiles.CASA1_4;  
+                case 15:
+                return Tiles.CASA1_5;  
+                case 16:
+                return Tiles.CASA1_6;  
+                case 17:
+                return Tiles.FORJA1;  
+                case 18:
+                return Tiles.FORJA2;
+                case 19:
+                return Tiles.FORJA3;
+                case 20:
+                return Tiles.FORJA4;
         
             default:
                 return Tiles.VOID;

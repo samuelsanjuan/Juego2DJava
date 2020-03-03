@@ -13,6 +13,7 @@ import java.awt.image.BufferedImage;
 import java.awt.image.DataBufferInt;
 import javax.swing.JFrame;
 import mapa.Mapa;
+import mapa.MapaCargado;
 import mapa.MapaGenerado;
 
 /**
@@ -52,7 +53,7 @@ public class Juego extends Canvas implements Runnable{
         
         pantalla = new Pantalla(ANCHO,ALTO);
         
-        mapa=new MapaGenerado(64,64);
+        mapa=new MapaCargado("/mapas/mapa1.png");
                 
         teclado=new Teclado();
         addKeyListener(teclado);
@@ -97,24 +98,16 @@ public class Juego extends Canvas implements Runnable{
         teclado.actualizar();
         
         if(teclado.arriba){
-            System.out.println(y);
-            System.out.println(x);
-            x-=10;
+            x-=8;
         }
         if(teclado.abajo){
-            System.out.println(y);
-            System.out.println(x);
-            x+=10;
+            x+=8;
         }
         if(teclado.derecha){
-            System.out.println(y);
-            System.out.println(x);
-            y+=10;
+            y+=8;
         }       
         if(teclado.izquierda){
-            System.out.println(y);
-            System.out.println(x);
-            y-=10;
+            y-=8;
         }     
         
         aps++;
