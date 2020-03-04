@@ -13,7 +13,15 @@ public final class Sprite {
     public int []pixeles;
     private HojaSprites hoja;
     
-    //coleccion de sprites
+    //coleccion de sprites de personaje
+    
+    public static final Sprite PERSONAJE_FRENTE_IZQUIERDA=new Sprite(32,0,0,HojaSprites.Personajes1,0);
+    public static final Sprite PERSONAJE_FRENTE_DERECHA=new Sprite(32,1,0,HojaSprites.Personajes1,0);
+    public static final Sprite PERSONAJE_ESPALDA_DERECHA=new Sprite(32,2,0,HojaSprites.Personajes1,0);
+    public static final Sprite PERSONAJE_ESPALDA_IZQUIERDA=new Sprite(32,3,0,HojaSprites.Personajes1,0);
+    //fin coleccion de sprites de personaje
+    
+    //coleccion de sprites mapa
     
     public static final Sprite VOID= new Sprite(32,0);    
     public static final Sprite MONTANA=new Sprite(32,2,0,HojaSprites.HojaSprites1,0);
@@ -47,6 +55,10 @@ public final class Sprite {
     public static final Sprite CAMINO_BARRO_T_ARRIBA= new Sprite(32,4,0,HojaSprites.HojaSprites1,5);
     public static final Sprite CAMINO_BARRO_I_HORIZONTAL= new Sprite(32,5,0,HojaSprites.HojaSprites1,4);
     public static final Sprite CAMINO_BARRO_T_DERECHA= new Sprite(32,4,0,HojaSprites.HojaSprites1,1);
+    public static final Sprite CAMINO_BARRO_T_I_DERECHA= new Sprite(32,5,2,HojaSprites.HojaSprites1,0);
+    public static final Sprite CAMINO_BARRO_ESQUINA_INTERIOR_ABAJO_IZQUIERDA= new Sprite(32,4,1,HojaSprites.HojaSprites1,3);
+    public static final Sprite CAMINO_BARRO_ESQUINA_INTERIOR_ABAJO_DERECHA= new Sprite(32,4,1,HojaSprites.HojaSprites1,1);
+    public static final Sprite CAMINO_BARRO_ESQUINA_INTERIOR_ARRIBA_DERECHA= new Sprite(32,4,1,HojaSprites.HojaSprites1,2);
     
     
     

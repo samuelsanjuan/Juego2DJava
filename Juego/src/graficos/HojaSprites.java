@@ -22,7 +22,7 @@ public class HojaSprites {
 //coleccion de hojas de sprites
     
 public static HojaSprites HojaSprites1 = new HojaSprites("/res/sprite1.png",320,320);
-
+public static HojaSprites Personajes1= new HojaSprites("/res/SpritePersonajes.png",288,288);
 
 
 //fin de coleccion

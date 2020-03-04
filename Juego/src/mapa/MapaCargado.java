@@ -130,8 +130,20 @@ public class MapaCargado extends Mapa{
                 case 0xff884d2c:
                     catalogoTiles[i]=Tiles.CAMINO_BARRO_I_HORIZONTAL;
                     continue;
-                case 0xff9a3010:
+                case 0xff822d13:
                     catalogoTiles[i]=Tiles.CAMINO_BARRO_T_DERECHA;
+                    continue;
+                case 0xff9a3010:
+                    catalogoTiles[i]=Tiles.CAMINO_BARRO_T_I_DERECHA;
+                    continue;
+                case 0xffffe477:
+                    catalogoTiles[i]=Tiles.CAMINO_BARRO_ESQUINA_INTERIOR_ARRIBA_DERECHA;
+                    continue;
+                case 0xffffdc55:
+                    catalogoTiles[i]=Tiles.CAMINO_BARRO_ESQUINA_INTERIOR_ABAJO_IZQUIERDA;
+                    continue;
+                case 0xffffc555:
+                    catalogoTiles[i]=Tiles.CAMINO_BARRO_ESQUINA_INTERIOR_ABAJO_DERECHA;
                     continue;
                 default:
                     catalogoTiles[i]=Tiles.VOID;

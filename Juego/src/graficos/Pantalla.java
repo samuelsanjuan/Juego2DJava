@@ -1,5 +1,6 @@
 package graficos;
 
+import enitdades.criaturas.Jugador;
 import mapa.tiles.Tiles;
 
 /**
@@ -58,6 +59,30 @@ public final class Pantalla {
             }
         }
     }
+    
+    public void mostrarJugador(int compensacionX,int compensacionY,Jugador jugador){
+    
+        compensacionX-=diferenciaX;
+        compensacionY-=diferenciaY;
+        
+        for (int y=0;y<jugador.getSprite().getLado();y++){
+            int posicionY = y +compensacionY;
+            for(int x=0;x<jugador.getSprite().getLado();x++){
+                int posicionX=x+compensacionX;
+                if (posicionX<-jugador.getSprite().getLado()||posicionX>=ancho||posicionY<0||posicionY>=alto){
+                    break;
+                }
+                if (posicionX<0){
+                    posicionX=0;
+                }
+                int colorPixelJugador=jugador.getSprite().pixeles[x+y*jugador.getSprite().getLado()];
+                if (colorPixelJugador!=0xffff00ff){
+                    pixeles[posicionX+posicionY * ancho]=colorPixelJugador;
+                }
+            }
+        }
+    }
+    
     
     public void setDiferencia(final int diferenciaX,final int diferenciaY){
         this.diferenciaX=diferenciaX;

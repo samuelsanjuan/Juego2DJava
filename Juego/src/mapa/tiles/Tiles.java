@@ -53,6 +53,10 @@ public class Tiles {
     public static final Tiles CAMINO_BARRO_T_ARRIBA=new Tiles(Sprite.CAMINO_BARRO_T_ARRIBA); 
     public static final Tiles CAMINO_BARRO_I_HORIZONTAL=new Tiles(Sprite.CAMINO_BARRO_I_HORIZONTAL);
     public static final Tiles CAMINO_BARRO_T_DERECHA=new Tiles(Sprite.CAMINO_BARRO_T_DERECHA); 
+    public static final Tiles CAMINO_BARRO_T_I_DERECHA=new Tiles(Sprite.CAMINO_BARRO_T_I_DERECHA);
+    public static final Tiles CAMINO_BARRO_ESQUINA_INTERIOR_ABAJO_IZQUIERDA=new Tiles(Sprite.CAMINO_BARRO_ESQUINA_INTERIOR_ABAJO_IZQUIERDA);
+    public static final Tiles CAMINO_BARRO_ESQUINA_INTERIOR_ABAJO_DERECHA=new Tiles(Sprite.CAMINO_BARRO_ESQUINA_INTERIOR_ABAJO_DERECHA);
+    public static final Tiles CAMINO_BARRO_ESQUINA_INTERIOR_ARRIBA_DERECHA=new Tiles(Sprite.CAMINO_BARRO_ESQUINA_INTERIOR_ARRIBA_DERECHA);
     
     
     
