@@ -21,7 +21,7 @@ public class HojaSprites {
     
 //coleccion de hojas de sprites
     
-public static HojaSprites Prueba = new HojaSprites("/res/sprite1.png",320,320);
+public static HojaSprites HojaSprites1 = new HojaSprites("/res/sprite1.png",320,320);
 
 
 

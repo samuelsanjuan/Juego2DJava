@@ -98,16 +98,16 @@ public class Juego extends Canvas implements Runnable{
         teclado.actualizar();
         
         if(teclado.arriba){
-            x-=8;
+            x-=2;
         }
         if(teclado.abajo){
-            x+=8;
+            x+=2;
         }
         if(teclado.derecha){
-            y+=8;
+            y+=2;
         }       
         if(teclado.izquierda){
-            y-=8;
+            y-=2;
         }     
         
         aps++;

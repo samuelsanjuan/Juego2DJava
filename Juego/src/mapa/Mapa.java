@@ -84,7 +84,7 @@ public abstract class Mapa {
                 case 6:
                 return Tiles.CAMINO_BARRO_ESQUINA_INTERIOR_I;  
                 case 7:
-                return Tiles.CAMINO_BARRO_I;  
+                return Tiles.CAMINO_BARRO_I_VERTICAL;  
                 case 8:
                 return Tiles.CAMINO_BARRO_J;  
                 case 9:
