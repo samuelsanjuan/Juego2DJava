@@ -26,6 +26,7 @@ public class MapaCargado extends Mapa{
         super(ruta);
     }
     
+    @Override
     protected void cargarMapa(String ruta){
     
         try {
@@ -45,6 +46,7 @@ public class MapaCargado extends Mapa{
     
     }
     
+    @Override
     protected void generarMapa(){
     
         for (int i=0;i<pixeles.length;i++){

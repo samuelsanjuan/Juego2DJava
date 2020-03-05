@@ -20,7 +20,7 @@ public class Tiles {
     
     public static final int LADO=32;
     
-    private boolean solido;
+    private final boolean solido;
     
     //coleccion
     public static final Tiles MONTANA=new Tiles(Sprite.MONTANA,true);

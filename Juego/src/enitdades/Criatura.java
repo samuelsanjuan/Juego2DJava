@@ -5,7 +5,6 @@
  */
 package enitdades;
 
-import enitdades.Entidad;
 import graficos.Sprite;
 
 /**
