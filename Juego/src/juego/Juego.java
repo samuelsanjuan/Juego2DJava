@@ -2,7 +2,7 @@
 package juego;
 
 import control.Teclado;
-import enitdades.criaturas.Jugador;
+import enitdades.Jugador;
 import graficos.Pantalla;
 import graficos.Sprite;
 import java.awt.BorderLayout;
@@ -26,8 +26,8 @@ public class Juego extends Canvas implements Runnable{
 
     private static final long serialVersionUID=1L;
     
-    private static final int ANCHO=800;
-    private static final int ALTO=600;
+    private static final int ANCHO=600;
+    private static final int ALTO=680;
     
     private static volatile boolean enEjecucion=false;
     
@@ -59,7 +59,7 @@ public class Juego extends Canvas implements Runnable{
         teclado=new Teclado();
         addKeyListener(teclado);
         
-        jugador=new Jugador(teclado,240,400,Sprite.PERSONAJE_FRENTE_IZQUIERDA,mapa);
+        jugador=new Jugador(teclado,240,400,Sprite.PERSONAJE_FRENTE_IZQUIERDA_0,mapa);
         
         ventana=new JFrame(NOMBRE);
         ventana.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);

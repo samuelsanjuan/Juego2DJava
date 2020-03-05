@@ -16,10 +16,17 @@ public final class Sprite {
     
     //coleccion de sprites de personaje
     
-    public static final Sprite PERSONAJE_FRENTE_IZQUIERDA=new Sprite(32,0,0,HojaSprites.Personajes1,0);
-    public static final Sprite PERSONAJE_FRENTE_DERECHA=new Sprite(32,1,0,HojaSprites.Personajes1,0);
-    public static final Sprite PERSONAJE_ESPALDA_DERECHA=new Sprite(32,2,0,HojaSprites.Personajes1,0);
-    public static final Sprite PERSONAJE_ESPALDA_IZQUIERDA=new Sprite(32,3,0,HojaSprites.Personajes1,0);
+    public static final Sprite PERSONAJE_FRENTE_IZQUIERDA_0=new Sprite(32,0,0,HojaSprites.Personajes1,0);
+    public static final Sprite PERSONAJE_FRENTE_DERECHA_0=new Sprite(32,1,0,HojaSprites.Personajes1,0);
+    public static final Sprite PERSONAJE_ESPALDA_IZQUIERDA_0=new Sprite(32,2,0,HojaSprites.Personajes1,0);
+    public static final Sprite PERSONAJE_FRENTE_IZQUIERDA_1=new Sprite(32,0,1,HojaSprites.Personajes1,0);
+    public static final Sprite PERSONAJE_FRENTE_DERECHA_1=new Sprite(32,1,1,HojaSprites.Personajes1,0);
+    public static final Sprite PERSONAJE_ESPALDA_IZQUIERDA_1=new Sprite(32,2,1,HojaSprites.Personajes1,0);
+    public static final Sprite PERSONAJE_FRENTE_IZQUIERDA_2=new Sprite(32,0,2,HojaSprites.Personajes1,0);
+    public static final Sprite PERSONAJE_FRENTE_DERECHA_2=new Sprite(32,1,2,HojaSprites.Personajes1,0);
+    public static final Sprite PERSONAJE_ESPALDA_IZQUIERDA_2=new Sprite(32,2,2,HojaSprites.Personajes1,0);
+    
+    
     //fin coleccion de sprites de personaje
     
     //coleccion de sprites mapa
@@ -66,8 +73,6 @@ public final class Sprite {
     public static final Sprite FIN_CAMINO_I_O=new Sprite(32,5,3,HojaSprites.HojaSprites1,5);
     public static final Sprite FIN_CAMINO_I_N=new Sprite(32,5,3,HojaSprites.HojaSprites1,1);
     public static final Sprite FIN_CAMINO_I_S=new Sprite(32,5,3,HojaSprites.HojaSprites1,0);
-    
-    
     
     //fin de la colecion
     

@@ -54,7 +54,7 @@ public abstract class Mapa {
              //   getCuadro(x,y).mostrar(x, y, pantalla);
             
                 if (x<0||y<0||x>=ancho||y>=alto){
-                Tiles.VOID.mostrar(x, y, pantalla); 
+                Tiles.ARBOL.mostrar(x, y, pantalla); 
             
                 }else {
                 catalogoTiles[x+y*ancho].mostrar(x, y, pantalla);
@@ -123,7 +123,7 @@ public abstract class Mapa {
                 return Tiles.FORJA4;
         
             default:
-                return Tiles.VOID;
+                return Tiles.ARBOL;
         
         }
     }

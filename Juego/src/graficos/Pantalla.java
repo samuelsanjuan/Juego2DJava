@@ -1,6 +1,6 @@
 package graficos;
 
-import enitdades.criaturas.Jugador;
+import enitdades.Jugador;
 import mapa.tiles.Tiles;
 
 /**
