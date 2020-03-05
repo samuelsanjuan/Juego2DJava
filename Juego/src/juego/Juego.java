@@ -16,7 +16,7 @@ import java.awt.image.DataBufferInt;
 import javax.swing.JFrame;
 import mapa.Mapa;
 import mapa.MapaCargado;
-import mapa.MapaGenerado;
+//import mapa.MapaGenerado;
 
 /**
  *
@@ -59,7 +59,7 @@ public class Juego extends Canvas implements Runnable{
         teclado=new Teclado();
         addKeyListener(teclado);
         
-        jugador=new Jugador(teclado,240,400,Sprite.PERSONAJE_FRENTE_IZQUIERDA);
+        jugador=new Jugador(teclado,240,400,Sprite.PERSONAJE_FRENTE_IZQUIERDA,mapa);
         
         ventana=new JFrame(NOMBRE);
         ventana.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);

@@ -8,6 +8,7 @@ package enitdades.criaturas;
 import control.Teclado;
 import graficos.Pantalla;
 import graficos.Sprite;
+import mapa.Mapa;
 
 /**
  *
@@ -17,17 +18,18 @@ public class Jugador extends Criatura {
     
     private Teclado teclado;
     
-    public Jugador(Teclado teclado,Sprite sprite){
+    public Jugador(Teclado teclado,Sprite sprite,Mapa mapa){
         this.teclado=teclado;
         this.sprite=sprite;
-        
+        this.mapa=mapa;
     }
     
-    public Jugador(Teclado teclado, int posicionX, int posicionY,Sprite sprite){
+    public Jugador(Teclado teclado, int posicionX, int posicionY,Sprite sprite,Mapa mapa){
         this.teclado=teclado;
         this.x=posicionX;
         this.y=posicionY;
         this.sprite=sprite;
+        this.mapa=mapa;
     }
     
     @Override
@@ -37,16 +39,16 @@ public class Jugador extends Criatura {
         int desplazamientoY=0;
         
         if(teclado.arriba){
-            desplazamientoY--;
+            desplazamientoY-=3;
         }
         if (teclado.abajo){
-            desplazamientoY++;
+            desplazamientoY+=3;
         }
         if (teclado.izquierda){
-            desplazamientoX--;
+            desplazamientoX-=3;
         }
         if (teclado.derecha){
-            desplazamientoX++;
+            desplazamientoX+=3;
         }
         if (desplazamientoX!=0||desplazamientoY!=0){
             if(direccion=='n'){

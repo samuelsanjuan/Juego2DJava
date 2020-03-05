@@ -145,8 +145,27 @@ public class MapaCargado extends Mapa{
                 case 0xffffc555:
                     catalogoTiles[i]=Tiles.CAMINO_BARRO_ESQUINA_INTERIOR_ABAJO_DERECHA;
                     continue;
+                case 0xff664434:
+                    catalogoTiles[i]=Tiles.VALLA_HORIZONTAL;
+                    continue;
+                case 0xff764936:
+                    catalogoTiles[i]=Tiles.VALLA_VERTICAL;
+                    continue;
+                case 0xff766036:
+                    catalogoTiles[i]=Tiles.FIN_CAMINO_I_S;
+                    continue;
+                case 0xff876c39:
+                    catalogoTiles[i]=Tiles.FIN_CAMINO_I_O;
+                    continue;
+                case 0xff9d7c3e://aqui
+                    catalogoTiles[i]=Tiles.FIN_CAMINO_I_E;
+                    continue;
+                case 0xffa7823c:
+                    catalogoTiles[i]=Tiles.FIN_CAMINO_I_N;
+                    continue;
                 default:
-                    catalogoTiles[i]=Tiles.VOID;
+                    catalogoTiles[i]=Tiles.MONTANA;
+                    
             }
         
         }

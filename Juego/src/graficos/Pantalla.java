@@ -16,11 +16,7 @@ public final class Pantalla {
     private int diferenciaY;
      
     public final int []pixeles;
-    
-    
-   
-    
-    
+     
     
     public Pantalla(final int ancho,final int alto){
         this.ancho=ancho;

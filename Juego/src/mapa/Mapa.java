@@ -51,16 +51,26 @@ public abstract class Mapa {
         
         for (int y= n;y<s;y++){
             for (int x=o;x<e;x++){
-            //    getCuadro(x,y).mostrar(x, y, pantalla);
-            if (x<0||y<0||x>=ancho||y>=alto){
+             //   getCuadro(x,y).mostrar(x, y, pantalla);
+            
+                if (x<0||y<0||x>=ancho||y>=alto){
                 Tiles.VOID.mostrar(x, y, pantalla); 
-            } else {
+            
+                }else {
                 catalogoTiles[x+y*ancho].mostrar(x, y, pantalla);
-            
-            }
-            
+                }
             }
         }
+    }
+    
+    public Tiles getTilesCatalogo(int posicion){
+   
+        return catalogoTiles[posicion]; 
+        
+    }
+    
+    public int getAncho(){
+        return ancho;
     }
     
     public Tiles getCuadro(final int x,final int y){

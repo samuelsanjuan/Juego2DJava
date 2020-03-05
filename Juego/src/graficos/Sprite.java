@@ -13,6 +13,7 @@ public final class Sprite {
     public int []pixeles;
     private HojaSprites hoja;
     
+    
     //coleccion de sprites de personaje
     
     public static final Sprite PERSONAJE_FRENTE_IZQUIERDA=new Sprite(32,0,0,HojaSprites.Personajes1,0);
@@ -59,7 +60,12 @@ public final class Sprite {
     public static final Sprite CAMINO_BARRO_ESQUINA_INTERIOR_ABAJO_IZQUIERDA= new Sprite(32,4,1,HojaSprites.HojaSprites1,3);
     public static final Sprite CAMINO_BARRO_ESQUINA_INTERIOR_ABAJO_DERECHA= new Sprite(32,4,1,HojaSprites.HojaSprites1,1);
     public static final Sprite CAMINO_BARRO_ESQUINA_INTERIOR_ARRIBA_DERECHA= new Sprite(32,4,1,HojaSprites.HojaSprites1,2);
-    
+    public static final Sprite VALLA_HORIZONTAL=new Sprite(32,4,3,HojaSprites.HojaSprites1,0);
+    public static final Sprite VALLA_VERTICAL=new Sprite(32,4,4,HojaSprites.HojaSprites1,0);
+    public static final Sprite FIN_CAMINO_I_E=new Sprite(32,5,3,HojaSprites.HojaSprites1,4);
+    public static final Sprite FIN_CAMINO_I_O=new Sprite(32,5,3,HojaSprites.HojaSprites1,5);
+    public static final Sprite FIN_CAMINO_I_N=new Sprite(32,5,3,HojaSprites.HojaSprites1,1);
+    public static final Sprite FIN_CAMINO_I_S=new Sprite(32,5,3,HojaSprites.HojaSprites1,0);
     
     
     

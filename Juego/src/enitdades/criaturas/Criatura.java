@@ -42,13 +42,47 @@ public abstract class Criatura extends Entidad {
         }
         
         if (!estaEliminado()){
-            setX(desplazamientoX);
-            setY(desplazamientoY);
+            if(!enColision(desplazamientoX,0)){
+                setX(desplazamientoX);
+            }
+            if (!enColision(0,desplazamientoY)){
+                setY(desplazamientoY);
+            }
+            
         }
     }
     
-    private boolean enColision(){
-        return false;
+    private boolean enColision(int desplazamientoX,int desplazamientoY){
+      boolean colision=false; 
+      
+      int posicionX=x+desplazamientoX;
+      int posicionY=y+desplazamientoY;
+      
+      int margenIzquierdo=0;
+      int margenDerecho=16;
+      int margenArriba=-2;
+      int margenInferior=31;
+      
+      int bordeIzquierdo=(posicionX+margenDerecho)/sprite.getLado();
+      int bordeDerecho=(posicionX+margenDerecho+margenIzquierdo)/sprite.getLado();
+      int bordeSuperior=(posicionY+margenInferior)/sprite.getLado();
+      int bordeInferior=(posicionY+margenInferior+margenArriba)/sprite.getLado();
+      
+      if(mapa.getTilesCatalogo(bordeIzquierdo+bordeSuperior*mapa.getAncho()).esSolido()){
+          colision=true;
+      }
+      
+      if(mapa.getTilesCatalogo(bordeIzquierdo+bordeInferior*mapa.getAncho()).esSolido()){
+          colision=true;
+      }
+      if(mapa.getTilesCatalogo(bordeDerecho+bordeInferior*mapa.getAncho()).esSolido()){
+          colision=true;
+      }
+      if(mapa.getTilesCatalogo(bordeDerecho+bordeSuperior*mapa.getAncho()).esSolido()){
+          colision=true;
+      }
+      
+      return colision;
     }
     
     public Sprite getSprite(){
